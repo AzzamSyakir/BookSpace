@@ -11,6 +11,9 @@
             android:theme="@style/Theme.BookSpace">
         <activity
                 android:name=".MainActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".splashScreen"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
