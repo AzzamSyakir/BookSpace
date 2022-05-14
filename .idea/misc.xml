@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/drawable/btn_bg.xml" value="0.28958333333333336" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/drawable/btn_bg_black.xml" value="0.290625" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/drawable/btn_bg_white.xml" value="0.290625" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/font/alatsi.xml" value="0.3046875" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/layout/activity_home_screen.xml" value="0.176" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/asaa0/IntelliJIDEAProjects/BookSpace/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
       </map>
     </option>
   </component>
