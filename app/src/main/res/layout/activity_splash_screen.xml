@@ -8,12 +8,12 @@
         tools:context=".splashScreen">
 
     <ImageView
-            android:layout_width="176dp"
-            android:layout_height="0dp" app:srcCompat="@drawable/book" android:id="@+id/imageView"
+            android:layout_width="192dp"
+            android:layout_height="160dp" app:srcCompat="@drawable/book" android:id="@+id/imageView"
             android:layout_marginTop="200dp"
             android:layout_marginBottom="35dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/textView" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"/>
     <TextView
             android:text="Book Space"
             android:textColor="@color/black"
@@ -22,6 +22,6 @@
             android:layout_height="wrap_content" android:id="@+id/textView"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="9dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
             android:layout_marginBottom="301dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
