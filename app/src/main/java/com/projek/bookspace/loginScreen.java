@@ -37,7 +37,7 @@ public class loginScreen extends AppCompatActivity {
         });back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent());
+                startActivity(new Intent(loginScreen.this, homeScreen.class));
             }
         });no_acc.setOnClickListener(new View.OnClickListener() {
             @Override
