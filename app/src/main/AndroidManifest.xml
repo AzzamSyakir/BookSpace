@@ -10,6 +10,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.BookSpace">
         <activity
+                android:name=".loginScreen"
+                android:exported="true"/>
+        <activity
+                android:name=".registerScreen"
+                android:exported="true"/>
+        <activity
                 android:name=".homeScreen"
                 android:exported="true"/>
         <activity
@@ -24,7 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
     </application>
 
 </manifest>

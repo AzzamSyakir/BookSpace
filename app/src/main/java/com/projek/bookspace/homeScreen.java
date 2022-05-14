@@ -23,7 +23,7 @@ public class homeScreen extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent());
+                startActivity(new Intent(homeScreen.this, loginScreen.class));
             }
         });
     }

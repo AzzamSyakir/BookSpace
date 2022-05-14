@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491828771333",
+    "project_id": "book-space-f01e3",
+    "storage_bucket": "book-space-f01e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491828771333:android:fe28439b6af1067b927a6c",
+        "android_client_info": {
+          "package_name": "com.projek.bookspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491828771333-2dks6n6ml4kv0t4jtvf02c8k35v31lq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projek.bookspace",
+            "certificate_hash": "faeedc46440171a83f7dcafeda411b47a42d8b4b"
+          }
+        },
+        {
+          "client_id": "491828771333-bfebs4a4asi1ur3tmb8mnotctnl7cvu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNmjBVgTrwbZO9Zym4nOVheHu0NtEhQjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491828771333-bfebs4a4asi1ur3tmb8mnotctnl7cvu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
