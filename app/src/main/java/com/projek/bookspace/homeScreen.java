@@ -17,13 +17,13 @@ public class homeScreen extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent());
+                startActivity(new Intent(homeScreen.this, registerScreen.class));
             }
         });
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent());
+                startActivity(new Intent(homeScreen.this, loginScreen.class));
             }
         });
     }
