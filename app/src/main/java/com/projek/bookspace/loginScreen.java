@@ -1,6 +1,7 @@
 package com.projek.bookspace;
 
 import android.content.Intent;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.*;
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class loginScreen extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    ProgressBar progressBar;
     ImageView back;
     Button login;
     EditText edt_email, edt_pass;
@@ -23,6 +25,7 @@ public class loginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
+        progressBar = findViewById(R.id.loading);
         back = findViewById(R.id.back);
         login = findViewById(R.id.login);
         edt_email = findViewById(R.id.edt_email);
@@ -53,8 +56,32 @@ public class loginScreen extends AppCompatActivity {
     }
 
     private void Login() {
+        email = edt_email.getText().toString();
+        password = edt_pass.getText().toString();
+        if (email.isEmpty()){
+            edt_email.setError("Email is required");
+            edt_email.requestFocus();
+            return;
+        }
+
+        if (password.isEmpty()){
+            edt_pass.setError("Pasword is required");
+            edt_pass.requestFocus();
+            return;
+        }
+        if (email.length() > 18){
+            edt_email.setError("Email is too long");
+            edt_email.requestFocus();
+            return;
+        }
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            edt_email.setError("Email is not valid");
+            edt_email.requestFocus();
+            return;
+        }
         mAuth = FirebaseAuth.getInstance();
-        mAuth.createUserWithEmailAndPassword(email, password)
+        mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -63,11 +90,12 @@ public class loginScreen extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(loginScreen.this, "Login success.",
                                     Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent());
+                            progressBar.setVisibility(View.VISIBLE);
                         } else {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(loginScreen.this, "Login failed.",
                                     Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
